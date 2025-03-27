@@ -11,7 +11,6 @@ import 'swiper/css/navigation';
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
-import Image from 'next/image';
 
 
 const images = [
@@ -72,7 +71,7 @@ export default function App() {
       >
         {images.map((image) => (
           <SwiperSlide key={image.id} className="flex justify-center items-center pb-[5px]">
-            <Image 
+            <img 
               src={image.img} 
               width={400}
               height={300}

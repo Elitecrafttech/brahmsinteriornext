@@ -2,4 +2,4 @@ User-agent: *
 Disallow: /admin/
 Allow: /
 
-Sitemap: https://www.brahmsinterior.com/sitemap.xml
+Sitemap: https://brahmsinterior.com/sitemap.xml

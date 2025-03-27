@@ -2,7 +2,6 @@ import React from 'react'
 import { TiSocialInstagram } from "react-icons/ti";
 import { SiFacebook } from "react-icons/si";
 import { AiFillTikTok } from "react-icons/ai";
-import Image from 'next/image';
 
 
 // Footer with social media Icons

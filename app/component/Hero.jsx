@@ -4,7 +4,6 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import Image from 'next/image';
 
 const images = [
     { id: 1, img: "/assets/img13.webp" },
@@ -46,11 +45,11 @@ const Hero = () => {
         <Slider {... settings}>
           {images.map((image) => (
             <div key={image.id} className="relative w-full h-[100vh]">
-              <Image
+              <img
                 src={image.img} 
                 fill
                 alt="Background" 
-                className="object-center object-cover" 
+                className="w-full h-full object-center object-cover" 
               />
             </div>
           ))}
@@ -59,7 +58,7 @@ const Hero = () => {
       {/* Content Over the sliding images */}
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white z-10 mx-auto">
       <div className='flex justify-center pt-[25px]'>
-      <Image src='/assets/logo.webp' width={270} height={150} loading="eager" alt="Hero Background" className='h-[150px] lg:w-[270px] w-[100%] rounded-md'/>
+      <img src='/assets/logo.webp' width={270} height={150} loading="eager" alt="Hero Background" className='h-[150px] lg:w-[270px] w-[100%] rounded-md'/>
       </div>
          <h1 className='text-xl mx-auto font-bold lg:font-semibold mb-[30px] lg:text-[40px] lg:leading-tight lg:max-w-[888px] text-shadow'
          data-aos="zoom-in-up"

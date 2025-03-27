@@ -1,6 +1,5 @@
 "use client";
 import React from 'react';
-import Image from 'next/image';
 
 const roomset = [
   { id: 1, img: "/assets/murphybed.webp", title: "Bed Room" },
@@ -48,7 +47,7 @@ const Roomset = () => {
                className='lg:h-[250px] lg:w-[250px] object-cover z-0 rounded-xl  h-60'
                 >
                     <source src='/assets/01c.webm' type="video/webm"/>
-                    <Image src="/assets/img9.webp" height={250} width={250} loading="lazy" alt="Background" className='h-[250px] rounded-xl'
+                    <img src="/assets/img9.webp" height={250} width={250} loading="lazy" alt="Background" className='h-[250px] rounded-xl'
                     />
                 </video>
 
@@ -58,8 +57,8 @@ const Roomset = () => {
                 </div>
             </div>
             <div className='flex flex-col gap-[5px] items-center'>
-                <Image data-aos="fade-up" src="/assets/img1.webp" width={350} height={125} loading="lazy" alt="" className='h-[200px] lg:h-[125px] w-[350px] rounded-xl object-cover'/>
-                <Image data-aos="fade-up" src="/assets/murphybed.webp" width={350} height={125} loading="lazy" alt="" className='h-[200px] lg:h-[125px] w-[350px] rounded-xl'/>
+                <img data-aos="fade-up" src="/assets/img1.webp" width={350} height={125} loading="lazy" alt="" className='h-[200px] lg:h-[125px] w-[350px] rounded-xl object-cover'/>
+                <img data-aos="fade-up" src="/assets/murphybed.webp" width={350} height={125} loading="lazy" alt="" className='h-[200px] lg:h-[125px] w-[350px] rounded-xl'/>
                 
             </div>
         </div>
@@ -70,7 +69,7 @@ const Roomset = () => {
             data-aos="fade-up"
             data-aos-delay={room.aosDelay}
             key={room.id} className="relative rounded-xl overflow-hidden shadow-lg">
-              {room.img && <Image src={room.img} width={500} height={240} loading="lazy" alt={room.title} className="w-full h-60 object-cover " />}
+              {room.img && <img src={room.img} width={500} height={240} loading="lazy" alt={room.title} className="w-full h-60 object-cover " />}
                 {room.video && (
                 <video controls autoPlay loop muted loading="lazy" preload="metadata" className="w-full h-60 object-cover">
                     <source src={room.video} type="video/webm" />
